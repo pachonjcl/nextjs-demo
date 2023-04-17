@@ -2,6 +2,9 @@
   "name": "nextjs-app",
   "version": "0.1.0",
   "private": true,
+  "prisma": {
+    "seed": "node --require esbuild-register seed.ts"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +12,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^4.12.0",
     "@types/node": "18.15.11",
     "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11",
@@ -18,5 +22,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "prisma": "^4.12.0"
   }
 }
