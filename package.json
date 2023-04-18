@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "prisma": {
-    "seed": "node --require esbuild-register seed.ts"
+    "seed": "node --require esbuild-register prisma/seed.ts"
   },
   "scripts": {
     "dev": "next dev",
@@ -24,6 +24,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "esbuild-register": "^3.4.2",
     "prisma": "^4.12.0"
   }
 }
