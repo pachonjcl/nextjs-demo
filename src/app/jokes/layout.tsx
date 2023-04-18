@@ -23,12 +23,12 @@ export default async function Jokes({ children }: { children: any }) {
             <main className={styles['jokes-main']}>
                 <div className={styles['container']}>
                     <div className={styles['jokes-list']}>
-                        <Link href="/jokes">Get a random joke</Link>
+                        <Link href="/jokes" prefetch={false}>Get a random joke</Link>
                         <p>Here are a few more jokes to check out:</p>
                         <ul>
                             {jokes.map((joke: any) => (
                                 <li key={joke.id}>
-                                    {joke.name}
+                                    <Link href={`jokes/${joke.id}`}>{joke.name}</Link>
                                 </li>
                             ))}
                         </ul>
