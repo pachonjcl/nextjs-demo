@@ -8,7 +8,6 @@ async function JokeDetail({ params }: any) {
             id: params.jokeId,
         }
     });
-    console.log(joke);
 
     return (
         <div>
